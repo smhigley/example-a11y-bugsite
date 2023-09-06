@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A11y Shop | Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <span class="logotext">
+          <img class="logo" src="../assets/logo.png" alt="">
+          A11y Shop
+        </span>
+        <nav class="navigation">
+          <a href="./index.html">Home</a>
+          <a href="./cart.html">Cart</a>
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <div class="about-section">
+        <h1>About A11y Shop</h1>
+        <p>Established in 2023, we sell genuine, certified a11y products! Not at all inaccessible, we swear!</p>
+      </div>
+
+      <h2>Products</h2>
+      <div class="content-section">
+        <div class="product">
+          <img src="../assets/cat2.png">
+          <div class="productname">Cat</div>
+          <div class="price">$10.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="../assets/cat1.png">
+          <div class="productname">More Cats</div>
+          <div class="price">$20.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="../assets/cat3.png">
+          <div class="productname">Extra Cats</div>
+          <div class="price">$20.00</div>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <h2>Services</h2>
+      <div class="content-section">
+        <div class="service">
+          <img src="../assets/cat5.png">
+          <span class="servicename">Design</span>
+          <p>All our designs have excellent color contrast, and are created with users in mind.</p>
+        </div>
+        <div class="service">
+          <img src="../assets/cat6.png">
+          <span class="servicename">Development</span>
+          <p>We develop with accesisbility in mind, for all your semantic and interaction needs.</p>
+        </div>
+        <div class="service">
+          <img src="../assets/cat4.png">
+          <span class="servicename">Testing</span>
+          <p>We definitely test with users. Really.</p>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      const cartButtons = document.querySelectorAll('.add-to-cart');
+
+      const onCartClick = () => {
+        alert('Product added to cart (but not really)');
+      };
+
+      cartButtons.forEach((btn) => {
+        btn.addEventListener('click', onCartClick);
+      });
+    </script>
+  </body>
+</html>
