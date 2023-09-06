@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A11y Shop | Cart</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <span class="logotext">
+          <img class="logo" src="../assets/logo.png">
+          A11y Shop
+        </span>
+        <div class="navigation">
+          <a href="./index.html">Home</a>
+          <a href="./cart.html">Cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Your Cart</h1>
+
+      <ul class="purchases">
+        <li>
+          <span class="productname">Product: Cat</span>
+          <span class="price">$10.00</span>
+        </li>
+        <li>
+          <span class="productname">Product: Extra Cats</span>
+          <span class="price">$20.00</span>
+        </li>
+        <li class="total">
+          Total: $30.00
+        </li>
+      </ul>
+
+      <form class="checkout" novalidate>
+        <div class="field">
+          <input class="textfield" type="text" placeholder="Name">
+        </div>
+        <div class="field">
+          <input class="textfield" type="email" placeholder="Email">
+        </div>
+        <div class="field">
+          <input class="textfield" type="text" placeholder="Credit Card">
+        </div>
+        <button class="submit" type="submit" aria-label="Buy all items">Purchase</button>
+      </form>
+    </div>
+  </body>
+</html>
