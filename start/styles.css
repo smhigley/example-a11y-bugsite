@@ -148,7 +148,7 @@ h1, h2, h3 {
 
 .textfield {
   font-size: 1.2rem;
-  padding: 0.5em 1em;
+  padding: 0.5em 0.75em;
   border: 1px solid #44596f;
   border-radius: 3px;
   width: 100%;
