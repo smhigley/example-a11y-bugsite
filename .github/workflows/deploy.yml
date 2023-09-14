@@ -6,14 +6,19 @@ on:
 
 jobs:
   build:
-    name: React build
+    name: Deploy GH Pages
     runs-on: ubuntu-latest
     steps:
       # checkout files
       - uses: actions/checkout@v3
 
+      - name: Copy
+        run: |
+            mkdir public
+            cp -r assets start fixed public/
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./public
